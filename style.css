@@ -1,0 +1,134 @@
+/* Reseta margens padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* espaço entre logo e menu */
+  align-items: center; /* centraliza na vertical */
+  padding: 15px 30px;
+  background-color: #333; /* cor do fundo */
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff9800; /* muda cor quando passa o mouse */
+}
+body {
+    background-image: url(https://wallpapers.com/images/hd/design-black-background-lh6hd1i0ecusnwzg.jpg);
+    color: #fff;
+    
+}
+h1 {
+    font-size: 2.5em;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-left: 50px;
+    
+}
+.animada {
+    position: relative;
+    height: 1.2em;
+    overflow: hidden;
+    text-align: center;
+}
+.animada .lista {
+    display: flex;
+    flex-direction: column;
+    animation: subirPalavras 9s infinite;
+
+}
+
+.lista span {
+    height: 1.2em;
+    transition: transform 0.5s ease-in-out;
+    color: #ff9800;
+}
+@keyframes subirPalavras {
+    0%, 20%{transform: translateY(0);}
+    25%, 45%{transform: translateY(-1.2em);}
+    50%, 70%{transform: translateY(-2.4em);}
+    75%, 95%{transform: translateY(-3.6em);}
+    100%{transform: translateY(0);}
+}
+img {
+    height: 150px;
+    margin-top: 50px;
+    border-radius: 40px;
+    margin-left: 90px;
+    border: #ff9800;
+}
+.dois {
+    text-align: center;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-top: -150px;
+    justify-content: center;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+} 
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgb(0, 0, 0);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 40px;
+}
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgb(255, 132, 0);
+}
+.card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+.card button {
+  background: #ff9800;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.card button:hover {
+ background: #e68900;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
